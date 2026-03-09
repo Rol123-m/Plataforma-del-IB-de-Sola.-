@@ -1,0 +1,475 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    opacity: 0.9;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Grids */
+.anuncios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.asignaturas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjetas de Anuncios */
+.tarjeta-anuncio {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 5px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-anuncio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.tarjeta-anuncio h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.tarjeta-anuncio .fecha {
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.tarjeta-anuncio p {
+    color: #555;
+}
+
+/* Tarjetas de Asignaturas */
+.tarjeta-asignatura {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-asignatura:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(52, 152, 219, 0.3);
+}
+
+.contenido-asignatura {
+    padding: 25px;
+    text-align: center;
+}
+
+.contenido-asignatura h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.contenido-asignatura .profesor {
+    color: #7f8c8d;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.contenido-asignatura .descripcion {
+    color: #555;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+}
+
+.etiqueta-activa {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85em;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+/* Estilos para la página de detalles de asignatura */
+.detalle-asignatura {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+    margin: 30px 0;
+}
+
+.detalle-asignatura h2 {
+    margin-bottom: 20px;
+}
+
+.info-asignatura {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.info-asignatura p {
+    margin: 10px 0;
+}
+
+.info-asignatura strong {
+    color: #2c3e50;
+}
+
+.enlaces-clase {
+    margin-bottom: 30px;
+}
+
+.enlaces-clase h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.lista-enlaces {
+    list-style: none;
+}
+
+.lista-enlaces li {
+    margin-bottom: 10px;
+}
+
+.lista-enlaces a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.lista-enlaces a:hover {
+    background: #2980b9;
+}
+
+.recursos-extra h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.lista-recursos {
+    list-style: none;
+}
+
+.lista-recursos li {
+    margin-bottom: 10px;
+}
+
+.lista-recursos a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.lista-recursos a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.boton-volver {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton-volver:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 40px 0;
+    }
+    
+    header h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    .detalle-asignatura {
+        padding: 20px;
+    }
+}
+/* Estilos adicionales para la información personalizada */
+
+.header-info {
+    margin-top: 10px;
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Barra de navegación */
+.nav-bar {
+    background: #2c3e50;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.activo {
+    background: #3498db;
+}
+
+/* Información del módulo actual */
+.info-modulo {
+    background: linear-gradient(135deg, #27ae60, #2980b9);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.info-modulo h3 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.info-modulo p {
+    margin: 8px 0;
+    opacity: 0.95;
+}
+
+/* Código de asignatura */
+.codigo-asignatura {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.codigo-grande {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.info-creditos {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+.creditos, .modulo {
+    background: #ecf0f1;
+    padding: 3px 10px;
+    border-radius: 15px;
+}
+
+.creditos-badge {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Progreso de clases */
+.progreso-clases {
+    margin: 10px 0;
+}
+
+.etiqueta-clases {
+    display: inline-block;
+    background: #f39c12;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+/* Clases disponibles y no disponibles */
+.clase-disponible {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.clase-disponible:hover {
+    background: #2980b9;
+}
+
+.clase-no-disponible {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #bdc3c7;
+    color: #7f8c8d;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+/* Valores del curso */
+.valores-asignatura {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ecf0f1;
+}
+
+.valores-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.valor-etiqueta {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    border: 1px solid #bdc3c7;
+}
+
+/* Información de horario y evaluación */
+.info-horario,
+.info-evaluacion {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 5px solid #3498db;
+}
+
+.info-horario h3,
+.info-evaluacion h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Footer */
+.footer-small {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-menu li a {
+        display: block;
+    }
+    
+    .info-creditos {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}

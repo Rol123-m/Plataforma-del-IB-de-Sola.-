@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular - Instituto Bíblico</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionales para la malla curricular */
+        .malla-container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            margin: 30px 0;
+        }
+        
+        .seccion-malla {
+            margin-bottom: 40px;
+        }
+        
+        .seccion-malla h3 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        .tabla-asignaturas {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .tabla-asignaturas th {
+            background: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .tabla-asignaturas td {
+            padding: 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .tabla-asignaturas tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .codigo-tabla {
+            font-family: monospace;
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .modulos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .modulo-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border-left: 5px solid #27ae60;
+        }
+        
+        .modulo-card h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .modulo-card .creditos-modulo {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+        }
+        
+        .modulo-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .modulo-card li {
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 0.9em;
+        }
+        
+        .requisitos-graduacion {
+            background: #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .requisitos-graduacion h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .requisitos-graduacion ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .requisitos-graduacion li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .requisitos-graduacion li:before {
+            content: "✓";
+            color: #27ae60;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Instituto Bíblico "Iglesia Bautista de Sola"</h1>
+            <p class="subtitle">Bachiller en Teología - Malla Curricular</p>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="malla-curricular.html" class="activo">Malla Curricular</a></li>
+                <li><a href="index.html#asignaturas">Asignaturas en Curso</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="malla-container" id="malla-curricular">
+            <!-- Se cargará dinámicamente con JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Instituto Bíblico "Iglesia Bautista de Sola" - Todos los derechos reservados</p>
+            <p class="footer-small">Título otorgado: Bachiller en Teología · Sistema Modular · 24-30 meses · 50 créditos mínimos</p>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script>
+        function cargarMallaCurricular() {
+            const contenedor = document.getElementById('malla-curricular');
+            if (!contenedor) return;
+            
+            const malla = DATOS_INSTITUTO.mallaCurricular;
+            
+            let html = `
+                <h2>Malla Curricular - Bachiller en Teología</h2>
+                <p class="descripcion">Duración estimada: 24-30 meses · Total de créditos mínimos requeridos: 50 créditos</p>
+                
+                <div class="seccion-malla">
+                    <h3>📚 Asignaturas Troncales (Obligatorias) - 14 asignaturas</h3>
+                    <table class="tabla-asignaturas">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Asignatura</th>
+                                <th>Créditos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+            `;
+            
+            malla.troncales.forEach(asig => {
+                html += `
+                    <tr>
+                        <td class="codigo-tabla">${asig.codigo}</td>
+                        <td>${asig.nombre}</td>
+                        <td>${asig.creditos}</td>
+                    </tr>
+                `;
+            });
+            
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="seccion-malla">
+                    <h3>🎯 Trayectorias de Especialización Ministerial</h3>
+                    <p>El estudiante debe cursar al menos UNA trayectoria completa (mínimo 5 asignaturas)</p>
+                    
+                    <h4>📋 A. Ministerio Pastoral, Misionero y Liderazgo</h4>
+                    <table class="tabla-asignaturas">
+                        <thead><tr><th>Código</th><th>Asignatura</th><th>Créditos</th></tr></thead>
+                        <tbody>
+            `;
+            
+            malla.especializaciones.pastoral.forEach(asig => {
+                html += `<tr><td class="codigo-tabla">${asig.codigo}</td><td>${asig.nombre}</td><td>${asig.creditos}</td></tr>`;
+            });
+            
+            html += `
+                        </tbody>
+                    </table>
+                    
+                    <h4>🧸 B. Enseñanza y Ministerio Infantil</h4>
+                    <table class="tabla-asignaturas">
+                        <thead><tr><th>Código</th><th>Asignatura</th><th>Créditos</th></tr></thead>
+                        <tbody>
+            `;
+            
+            malla.especializaciones.infantil.forEach(asig => {
+                html += `<tr><td class="codigo-tabla">${asig.codigo}</td><td>${asig.nombre}</td><td>${asig.creditos}</td></tr>`;
+            });
+            
+            html += `
+                        </tbody>
+                    </table>
+                    
+                    <h4>🎵 C. Música y Adoración</h4>
+                    <table class="tabla-asignaturas">
+                        <thead><tr><th>Código</th><th>Asignatura</th><th>Créditos</th></tr></thead>
+                        <tbody>
+            `;
+            
+            malla.especializaciones.musica.forEach(asig => {
+                html += `<tr><td class="codigo-tabla">${asig.codigo}</td><td>${asig.nombre}</td><td>${asig.creditos}</td></tr>`;
+            });
+            
+            html += `
+                        </tbody>
+                    </table>
+                    
+                    <h4>📖 D. Educación Cristiana (Maestros)</h4>
+                    <table class="tabla-asignaturas">
+                        <thead><tr><th>Código</th><th>Asignatura</th><th>Créditos</th></tr></thead>
+                        <tbody>
+            `;
+            
+            malla.especializaciones.educacion.forEach(asig => {
+                html += `<tr><td class="codigo-tabla">${asig.codigo}</td><td>${asig.nombre}</td><td>${asig.creditos}</td></tr>`;
+            });
+            
+            html += `
+                        </tbody>
+                    </table>
+                    
+                    <h4>👥 E. Liderazgo y Ministerio Juvenil</h4>
+                    <table class="tabla-asignaturas">
+                        <thead><tr><th>Código</th><th>Asignatura</th><th>Créditos</th></tr></thead>
+                        <tbody>
+            `;
+            
+            malla.especializaciones.juvenil.forEach(asig => {
+                html += `<tr><td class="codigo-tabla">${asig.codigo}</td><td>${asig.nombre}</td><td>${asig.creditos}</td></tr>`;
+            });
+            
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="seccion-malla">
+                    <h3>📌 Asignaturas Optativas (Complementarias)</h3>
+                    <table class="tabla-asignaturas">
+                        <thead><tr><th>Código</th><th>Asignatura</th><th>Créditos</th></tr></thead>
+                        <tbody>
+            `;
+            
+            malla.optativas.forEach(asig => {
+                html += `<tr><td class="codigo-tabla">${asig.codigo}</td><td>${asig.nombre}</td><td>${asig.creditos}</td></tr>`;
+            });
+            
+            html += `
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="seccion-malla">
+                    <h3>📅 Organización Modular (Propuesta Cronológica)</h3>
+                    <div class="modulos-grid">
+            `;
+            
+            malla.organizacionModular.forEach(mod => {
+                html += `
+                    <div class="modulo-card">
+                        <h4>Módulo ${mod.modulo}</h4>
+                        <span class="creditos-modulo">${mod.creditos} créditos</span>
+                        <ul>
+                `;
+                
+                if (Array.isArray(mod.asignaturas)) {
+                    mod.asignaturas.forEach(asig => {
+                        html += `<li>${asig}</li>`;
+                    });
+                } else {
+                    html += `<li>${mod.asignaturas}</li>`;
+                }
+                
+                html += `
+                        </ul>
+                    </div>
+                `;
+            });
+            
+            html += `
+                    </div>
+                </div>
+                
+                <div class="requisitos-graduacion">
+                    <h4>✅ Requisitos de Graduación</h4>
+                    <ul>
+                        <li>14 asignaturas troncales completadas</li>
+                        <li>1 trayectoria de especialización (mínimo 5 asignaturas)</li>
+                        <li>2 asignaturas de otra trayectoria de especialización (mínimo 2 asignaturas)</li>
+                        <li>2 asignaturas optativas recomendadas</li>
+                        <li>Metodología de la Investigación (IB-IN-801) aprobada</li>
+                        <li>Trabajo Final de Curso (TFC) o Examen Integrador Final</li>
+                        <li>Asistencia mínima del 80% en cada asignatura</li>
+                        <li>Evaluación cualitativa satisfactoria en Vida Espiritual Personal</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Total de créditos mínimos requeridos: 50 créditos</strong></p>
+                </div>
+            `;
+            
+            contenedor.innerHTML = html;
+        }
+        
+        document.addEventListener('DOMContentLoaded', cargarMallaCurricular);
+    </script>
+</body>
+</html>
