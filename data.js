@@ -27,14 +27,19 @@ const DATOS_INSTITUTO = {
             contenido: "1er y 2do turno: Introducción a la Biblia | 3er y 4to turno: Liderazgo y Técnica de Estudio (alternados)"
         },
         {
-            titulo: "🙏 Vida Espiritual Personal",
-            fecha: "Todos los encuentros",
-            contenido: "Sesión devocional de 30 minutos al inicio de cada jornada."
+            titulo: "🙏 Clases del próximo encuentro",
+            fecha: "18 de marzo",
+            contenido: "Primer y segundo turno: Introducción al estudio de la Biblia. Tercer y cuarto turno: Técnica de Estudio"
         },
         {
             titulo: "📝 Tarea Liderazgo",
             fecha: "4 de marzo",
-            contenido: "Leer capítulo 2 del libro y hacer diagnóstico de estilo de liderazgo."
+            contenido: "Leer capítulo 2 del libro y hacer diagnóstico de estilo de liderazgo. Esta tarea debe estar lista para el 1ro de abril"
+        },
+        {
+            titulo: "📝 Guía de estudio disponible para la pregunta escrita de IB-BI-001",
+            fecha: "18 de marzo",
+            contenido: "En la sección de recursos, en la asignatura, puede encontrar la guía para la pregunta escrita "
         }
     ],
 
@@ -59,8 +64,8 @@ const DATOS_INSTITUTO = {
             activa: true,
             proximas_clases: [
                 { fecha: "4 de marzo", tema: "¿Por qué estudiar la Biblia? / Origen Divino" },
-                { fecha: "18 de marzo", tema: "¿Cómo nos llegó la Biblia? (Parte 1)" },
-                { fecha: "1 de abril", tema: "Transmisión y Panorama del AT" },
+                { fecha: "18 de marzo", tema: "¿Cómo nos llegó la Biblia? Originales-manuscritos-traducciones" },
+                { fecha: "1 de abril", tema: "¿Cómo nos llegó la Biblia (Parte 2) Transmisión y Panorama del AT" },
                 { fecha: "15 de abril", tema: "Período Intertestamentario y Panorama del NT" },
                 { fecha: "29 de abril", tema: "Principios, Herramientas y Obstáculos" },
                 { fecha: "13 de mayo", tema: "Conclusión y Evaluación Final" }
@@ -136,6 +141,7 @@ const DATOS_INSTITUTO = {
                 }
             ],
             recursos: [
+                { nombre: "📖 guía de estudio para la pregunta escrita No 1", url: "https://rol123-m.github.io/repaso-del-IB-clase-uno/", tipo: "requerido" },
                 { nombre: "📖 Biblia NVI (obligatorio)", url: "#", tipo: "requerido" },
                 { nombre: "📘 Manual de la asignatura", url: "#", tipo: "requerido" },
                 { nombre: "📙 Fee & Stuart - La lectura eficaz de la Biblia", url: "#", tipo: "recomendado" },
@@ -148,7 +154,7 @@ const DATOS_INSTITUTO = {
             id: "liderazgo-servicio",
             codigo: "IB-MT-702",
             nombre: "Liderazgo de Servicio",
-            profesor: "Por asignar",
+            profesor: "Lic. Yordanka Álvarez Pérez MMin (en proceso) METh (en proceso)",
             descripcion: "Desarrolla habilidades de liderazgo basadas en el ejemplo de Jesús, enfocándose en el servicio, la formación de discípulos y el liderazgo transformacional.",
             creditos: 2,
             horas_totales: "7 horas",
@@ -159,10 +165,10 @@ const DATOS_INSTITUTO = {
             activa: true,
             proximas_clases: [
                 { fecha: "4 de marzo", tema: "Introducción al Liderazgo de Servicio", turno: "3er y 4to turno" },
-                { fecha: "1 de abril", tema: "Técnica de Estudio", turno: "3er turno" },
-                { fecha: "15 de abril", tema: "Liderazgo de Servicio", turno: "4to turno" },
-                { fecha: "29 de abril", tema: "Liderazgo de Servicio", turno: "3er turno" },
-                { fecha: "13 de mayo", tema: "Liderazgo de Servicio", turno: "4to turno" }
+                { fecha: "1 de abril", tema: "Estilos de liderazgo", turno: "3er turno" },
+                { fecha: "15 de abril", tema: "Formando equipos de servicio", turno: "4to turno" },
+                { fecha: "29 de abril", tema: "Motivar a otros/liderar el cambio", turno: "3er turno" },
+                { fecha: "13 de mayo", tema: "Integridad y rendición de cuentas", turno: "4to turno" }
             ],
             clases: [
                 {
@@ -176,16 +182,16 @@ const DATOS_INSTITUTO = {
                 },
                 {
                     numero: 2,
-                    nombre: "Clase 2: Técnica de Estudio (compartida)",
+                    nombre: "Introducción a los estilos de liderazgo",
                     fecha: "1 de abril",
                     hora: "4:30 PM - 5:15 PM (3er turno)",
                     url: "#",
-                    temas: ["Métodos de estudio", "Organización del tiempo"],
+                    temas: ["Estilos de liderazgo", "Conócete a tí mismo"],
                     disponible: false
                 },
                 {
                     numero: 3,
-                    nombre: "Clase 3: Características del Líder Siervo",
+                    nombre: "Clase 3: Formando equipos de servicio",
                     fecha: "15 de abril",
                     hora: "5:15 PM - 6:00 PM (4to turno)",
                     url: "#",
@@ -194,7 +200,7 @@ const DATOS_INSTITUTO = {
                 },
                 {
                     numero: 4,
-                    nombre: "Clase 4: Liderazgo en la Práctica",
+                    nombre: "Clase 4: Motivando a otros",
                     fecha: "29 de abril",
                     hora: "4:30 PM - 5:15 PM (3er turno)",
                     url: "#",
@@ -203,11 +209,11 @@ const DATOS_INSTITUTO = {
                 },
                 {
                     numero: 5,
-                    nombre: "Clase 5: Evaluación y Cierre",
+                    nombre: "Clase 5: Integridad y rendición de cuentas",
                     fecha: "13 de mayo",
                     hora: "5:15 PM - 6:00 PM (4to turno)",
                     url: "#",
-                    temas: ["Diagnóstico de estilo", "Plan de desarrollo"],
+                    temas: ["Integridad en el liderazgo", "Plan de desarrollo"],
                     disponible: false
                 }
             ],
@@ -223,7 +229,7 @@ const DATOS_INSTITUTO = {
             id: "tecnica-estudio",
             codigo: "IB-IN-800",
             nombre: "Técnica de Estudio",
-            profesor: "Por asignar",
+            profesor: "Raúl Isnel Viera de la Rosa.",
             descripcion: "Desarrolla habilidades y métodos efectivos de estudio para optimizar el aprendizaje y la retención de contenidos teológicos.",
             creditos: 2,
             horas_totales: "7 horas",
