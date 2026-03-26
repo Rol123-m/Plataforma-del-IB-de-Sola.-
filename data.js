@@ -16,30 +16,26 @@ const DATOS_INSTITUTO = {
     // SECCIÓN DE ANUNCIOS
     // ============================================
     anuncios: [
+       
         {
-            titulo: "📢 Inicio del Módulo 1",
-            fecha: "4 de Marzo, 2026",
-            contenido: "¡Comenzamos! Tres asignaturas: Introducción a la Biblia (2 turnos), Liderazgo de Servicio y Técnica de Estudio."
-        },
-        {
-            titulo: "📚 Horario del Módulo",
+            titulo: "📢 Tarea de Técnica de Estudio",
             fecha: "Actualizado",
-            contenido: "1er y 2do turno: Introducción a la Biblia | 3er y 4to turno: Liderazgo y Técnica de Estudio (alternados)"
+            contenido: "Crear un calendario semanal con lo más importante de tu rutina"
         },
         {
             titulo: "🙏 Clases del próximo encuentro",
-            fecha: "18 de marzo",
-            contenido: "Primer y segundo turno: Introducción al estudio de la Biblia. Tercer y cuarto turno: Técnica de Estudio"
+            fecha: "1 de abril",
+            contenido: "En el próximo encuentro tendremos un turno en cada asignatura. "
         },
         {
             titulo: "📝 Tarea Liderazgo",
-            fecha: "4 de marzo",
+            fecha: "1 de marzo",
             contenido: "Leer capítulo 2 del libro y hacer diagnóstico de estilo de liderazgo. Esta tarea debe estar lista para el 1ro de abril"
         },
         {
-            titulo: "📝 Guía de estudio disponible para la pregunta escrita de IB-BI-001",
-            fecha: "18 de marzo",
-            contenido: "En la sección de recursos, en la asignatura, puede encontrar la guía para la pregunta escrita "
+            titulo: "📝 Notas de la pregunta escrita",
+            fecha: "Actualizado",
+            contenido: "En el contenido de la asignatura puede encontrar su nota. "
         }
     ],
 
@@ -96,12 +92,12 @@ const DATOS_INSTITUTO = {
                 },
                 { 
                     numero: 2,
-                    nombre: "Clase 2: ¿Cómo nos llegó la Biblia? - Parte 1",
+                    nombre: "Clase 2: ¿Cómo nos llegó la Biblia?",
                     fecha: "18 de marzo",
                     hora: "3:00 PM - 4:20 PM",
-                    url: "#",
+                    url: "clases/introduccion-biblia/clase-2-completa.html",
                     temas: ["Idiomas originales", "Materiales de escritura", "Rollos del Mar Muerto", "La Septuaginta"],
-                    disponible: false
+                    disponible: true
                 },
                 { 
                     numero: 3,
@@ -142,10 +138,11 @@ const DATOS_INSTITUTO = {
             ],
             recursos: [
                 { nombre: "📖 guía de estudio para la pregunta escrita No 1", url: "https://rol123-m.github.io/repaso-del-IB-clase-uno/", tipo: "requerido" },
-                { nombre: "📖 Biblia NVI (obligatorio)", url: "#", tipo: "requerido" },
-                { nombre: "📘 Manual de la asignatura", url: "#", tipo: "requerido" },
+                { nombre: "📖 Biblia NVI (obligatorio)", url: "https://www.bing.com/ck/a?!&&p=a024a2e5bfbd75419d1c66c7e4d41a73da4749a46fb6301504a931114995d032JmltdHM9MTc3NDM5NjgwMA&ptn=3&ver=2&hsh=4&fclid=03f45664-13d5-6ab0-3da2-44bc12cf6bfd&psq=biblia+nvi+andrid&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPW9yZy5iaWJsaWEubnVldmEudmVyc2lvbi5pbnRlcm5hY2lvbmFsLm52aSZobD1lcy00MTk", tipo: "requerido" },
+                { nombre: "📘 Manual de la asignatura", url: "https://drive.google.com/file/d/1L-2vlx2BWX6vJeptlgumUidZLzubSOFl/view?usp=drivesdk", tipo: "requerido" },
                 { nombre: "📙 Fee & Stuart - La lectura eficaz de la Biblia", url: "#", tipo: "recomendado" },
-                { nombre: "📗 Grudem - Teología Sistemática", url: "#", tipo: "consulta" }
+                { nombre: "📗 Grudem - Teología Sistemática", url: "#", tipo: "consulta" },
+                { nombre: "📗 Tabla de los Géneros", url: "recursos/tabla-generos.html", tipo: "consulta" }
             ]
         },
         
@@ -273,8 +270,8 @@ const DATOS_INSTITUTO = {
                 }
             ],
             recursos: [
-                { nombre: "📘 Manual de Técnicas de Estudio", url: "#", tipo: "requerido" },
-                { nombre: "📝 Plantilla de organización semanal", url: "#", tipo: "material" }
+                { nombre: "📘 Manual de Técnicas de Estudio", url: "https://drive.google.com/file/d/1KzBbRLeDwoWrvuET2cSl1c5k6c232Xg-/view?usp=drivesdk", tipo: "requerido" },
+                { nombre: "📝 Guía de estudio", url: "#", tipo: "material" }
             ]
         }
     ],
