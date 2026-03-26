@@ -36,6 +36,11 @@ const DATOS_INSTITUTO = {
             titulo: "📝 Notas de la pregunta escrita",
             fecha: "Actualizado",
             contenido: "En el contenido de la asignatura puede encontrar su nota. "
+        },
+         {
+            titulo: "tabla de los géneros literarios",
+            fecha: "Actualizado",
+            contenido: "Revise en los recursos de la asignatura Introducción al Estudio de la Biblia "
         }
     ],
 
@@ -138,10 +143,10 @@ const DATOS_INSTITUTO = {
             ],
             recursos: [
                 { nombre: "📖 guía de estudio para la pregunta escrita No 1", url: "https://rol123-m.github.io/repaso-del-IB-clase-uno/", tipo: "requerido" },
+                 { nombre: "📖 Notas de la pregunta escrita No 1", url: "https://drive.google.com/file/d/1J45vAzG7Vn5eh02jyWDWehYlM0A9Dgr8/view?usp=sharing", tipo: "requerido" },
                 { nombre: "📖 Biblia NVI (obligatorio)", url: "https://www.bing.com/ck/a?!&&p=a024a2e5bfbd75419d1c66c7e4d41a73da4749a46fb6301504a931114995d032JmltdHM9MTc3NDM5NjgwMA&ptn=3&ver=2&hsh=4&fclid=03f45664-13d5-6ab0-3da2-44bc12cf6bfd&psq=biblia+nvi+andrid&u=a1aHR0cHM6Ly9wbGF5Lmdvb2dsZS5jb20vc3RvcmUvYXBwcy9kZXRhaWxzP2lkPW9yZy5iaWJsaWEubnVldmEudmVyc2lvbi5pbnRlcm5hY2lvbmFsLm52aSZobD1lcy00MTk", tipo: "requerido" },
                 { nombre: "📘 Manual de la asignatura", url: "https://drive.google.com/file/d/1L-2vlx2BWX6vJeptlgumUidZLzubSOFl/view?usp=drivesdk", tipo: "requerido" },
-                { nombre: "📙 Fee & Stuart - La lectura eficaz de la Biblia", url: "#", tipo: "recomendado" },
-                { nombre: "📗 Grudem - Teología Sistemática", url: "#", tipo: "consulta" },
+                { nombre: "📙 Fee & Stuart - La lectura eficaz de la Biblia", url: "https://drive.google.com/file/d/1L0FXCbw70xARXSczc-wNqvH0_gx60JdH/view?usp=drivesdk", tipo: "recomendado" },
                 { nombre: "📗 Tabla de los Géneros", url: "recursos/tabla-generos.html", tipo: "consulta" }
             ]
         },
@@ -215,8 +220,8 @@ const DATOS_INSTITUTO = {
                 }
             ],
             recursos: [
-                { nombre: "📖 Libro: Liderazgo de Servicio (capítulos 1-2)", url: "#", tipo: "requerido" },
-                { nombre: "📝 Diagnóstico de estilo de liderazgo", url: "#", tipo: "material" },
+                { nombre: "📖 Libro: Liderazgo de Servicio", url: "https://drive.google.com/file/d/1PK3Nao3Ay2mxnp_YeKDnx2NQODzN7bet/view?usp=sharing", tipo: "requerido" },
+                { nombre: "📝 Diagnóstico de estilo de liderazgo", url: "https://drive.google.com/file/d/1DCz82Y4R_9mkVQhr1Uh_FH-xFnW1YHio/view?usp=sharing", tipo: "material" },
                 { nombre: "📄 Estudio de caso: ¿Líder o Jefe?", url: "recursos/estudio-caso-1.html", tipo: "material" }
             ]
         },
