@@ -113,6 +113,16 @@ const DATOS_INSTITUTO = {
                     temas: ["Argumento del AT"],
                     disponible: true
                 },
+
+                 { 
+                    numero: 3,
+                    nombre: "Clase 3: Ejemplos difíciles usados en la clase",
+                    fecha: "15 de abril",
+                    hora: "3:00 PM - 4:20 PM",
+                    url: "clases/introduccion-biblia/ejemplos_clase3.html",
+                    temas: ["Argumento del AT"],
+                    disponible: true
+                },
                 { 
                     numero: 4,
                     nombre: "Clase 4: Período Intertestamentario y Panorama del NT",
