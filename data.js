@@ -270,7 +270,7 @@ const DATOS_INSTITUTO = {
                     nombre: "Clase 2: Hábito de estudio y método EPLRR",
                     fecha: "1 de abril",
                     hora: "4:30 PM - 5:15 PM",
-                    url: "#",
+                    url: "clases/tecnica-estudio/clase-2.html",
                     temas: ["Lectura activa", "Subrayado", "Mapas conceptuales"],
                     disponible: true
                 },
