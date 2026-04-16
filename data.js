@@ -109,9 +109,9 @@ const DATOS_INSTITUTO = {
                     nombre: "Clase 3: Transmisión y Panorama del AT",
                     fecha: "1 de abril",
                     hora: "3:00 PM - 4:20 PM",
-                    url: "#",
-                    temas: ["Crítica textual", "Versiones", "Argumento del AT"],
-                    disponible: false
+                    url: "clases/introduccion-biblia/clase3.html",
+                    temas: ["Argumento del AT"],
+                    disponible: true
                 },
                 { 
                     numero: 4,
@@ -185,16 +185,16 @@ const DATOS_INSTITUTO = {
                 {
                     numero: 2,
                     nombre: "Introducción a los estilos de liderazgo",
-                    fecha: "1 de abril",
+                    fecha: "15 de abril",
                     hora: "4:30 PM - 5:15 PM (3er turno)",
-                    url: "#",
+                    url: "clases/liderazgo-servicio/clase2.html",
                     temas: ["Estilos de liderazgo", "Conócete a tí mismo"],
-                    disponible: false
+                    disponible: true
                 },
                 {
                     numero: 3,
                     nombre: "Clase 3: Formando equipos de servicio",
-                    fecha: "15 de abril",
+                    fecha: "29 de abril",
                     hora: "5:15 PM - 6:00 PM (4to turno)",
                     url: "#",
                     temas: ["El corazón del líder", "Humildad y servicio"],
@@ -257,12 +257,12 @@ const DATOS_INSTITUTO = {
                 },
                 {
                     numero: 2,
-                    nombre: "Clase 2: Lectura Comprensiva y Análisis",
+                    nombre: "Clase 2: Hábito de estudio y método EPLRR",
                     fecha: "1 de abril",
                     hora: "4:30 PM - 5:15 PM",
                     url: "#",
                     temas: ["Lectura activa", "Subrayado", "Mapas conceptuales"],
-                    disponible: false
+                    disponible: true
                 },
                 {
                     numero: 3,
