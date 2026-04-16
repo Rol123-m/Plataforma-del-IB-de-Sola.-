@@ -251,9 +251,9 @@ const DATOS_INSTITUTO = {
                     nombre: "Clase 1: Fundamentos del Estudio Efectivo",
                     fecha: "18 de marzo",
                     hora: "4:30 PM - 5:15 PM",
-                    url: "#",
+                    url: "clases/tecnica-estudio/clase-1.html",
                     temas: ["Métodos de estudio", "Organización del tiempo", "Técnicas de memorización"],
-                    disponible: false
+                    disponible: true
                 },
                 {
                     numero: 2,
