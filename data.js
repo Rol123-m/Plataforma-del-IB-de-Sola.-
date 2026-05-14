@@ -18,29 +18,29 @@ const DATOS_INSTITUTO = {
     anuncios: [
        
         {
-            titulo: "📢 Tarea de Técnica de Estudio",
+            titulo: "📢 Clases de Introducción al estudio de la Biblia y Liderazgo actualizadas",
             fecha: "Actualizado",
-            contenido: "Crear un calendario semanal con lo más importante de tu rutina"
+            contenido: "Las últimas clases ya están disponibles"
         },
         {
             titulo: "🙏 Clases del próximo encuentro",
-            fecha: "1 de abril",
-            contenido: "En el próximo encuentro tendremos un turno en cada asignatura. "
+            fecha: "27 de mayo",
+            contenido: "En el próximo encuentro tendremos un turno en cada asignatura."
         },
         {
-            titulo: "📝 Tarea Liderazgo",
-            fecha: "1 de marzo",
-            contenido: "Leer capítulo 2 del libro y hacer diagnóstico de estilo de liderazgo. Esta tarea debe estar lista para el 1ro de abril"
+            titulo: "📝 Tarea Introducción al estudio de la Biblia",
+            fecha: "13 de mayo de 2026",
+            contenido: "Algunos alumnos investigarán temas del período intertestamentario. Otros reaccionarán sobre el impacto de la investigación en el NT y otros sobre algún pasje del NT conectado a esto."
         },
         {
-            titulo: "📝 Notas de la pregunta escrita",
-            fecha: "Actualizado",
-            contenido: "En el contenido de la asignatura puede encontrar su nota. "
+            titulo: "📢 Formar equipos para ensayo de Introducción al estudio de la Biblia",
+            fecha: "Vence el 14 de mayo",
+            contenido: "Los líderes fueron asignados, los equipos son por afinidad."
         },
          {
-            titulo: "tabla de los géneros literarios",
-            fecha: "Actualizado",
-            contenido: "Revise en los recursos de la asignatura Introducción al Estudio de la Biblia "
+            titulo: "El contenido de técnica de estudio aún no está disponible",
+            fecha: "En espera",
+            contenido: "El profesor tiene problemas con su whatsap."
         }
     ],
 
@@ -125,17 +125,27 @@ const DATOS_INSTITUTO = {
                 },
                 { 
                     numero: 4,
-                    nombre: "Clase 4: Período Intertestamentario y Panorama del NT",
-                    fecha: "15 de abril",
+                    nombre: "Clase 4: Período Intertestamentario",
+                    fecha: "13 de mayo",
                     hora: "3:00 PM - 4:20 PM",
-                    url: "#",
-                    temas: ["400 años de silencio", "Grupos políticos", "Argumento del NT"],
-                    disponible: false
+                    url: "clases/introduccion-biblia/clase4.html",
+                    temas: ["400 años de silencio", "Grupos políticos", "Batalla de los Macabeos"],
+                    disponible: true
+                },
+
+                { 
+                    numero: 4,
+                    nombre: "Panorama del NT",
+                    fecha: "13 de mayo",
+                    hora: "3:00 PM - 4:20 PM",
+                    url: "clases/introduccion-biblia/clase5.html",
+                    temas: ["Argumento del NT", "Problemas Interpretativos"],
+                    disponible: true
                 },
                 { 
                     numero: 5,
                     nombre: "Clase 5: Principios, Herramientas y Obstáculos",
-                    fecha: "29 de abril",
+                    fecha: "27 de mayo",
                     hora: "3:00 PM - 4:20 PM",
                     url: "#",
                     temas: ["Observación, Interpretación, Aplicación", "Herramientas básicas"],
@@ -144,7 +154,7 @@ const DATOS_INSTITUTO = {
                 { 
                     numero: 6,
                     nombre: "Clase 6: Conclusión y Evaluación Final",
-                    fecha: "13 de mayo",
+                    fecha: "10 de junio",
                     hora: "3:00 PM - 4:20 PM",
                     url: "#",
                     temas: ["Presentación de trabajos", "Evaluación final"],
@@ -204,11 +214,11 @@ const DATOS_INSTITUTO = {
                 {
                     numero: 3,
                     nombre: "Clase 3: Formando equipos de servicio",
-                    fecha: "29 de abril",
+                    fecha: "13 de mayo",
                     hora: "5:15 PM - 6:00 PM (4to turno)",
-                    url: "#",
-                    temas: ["El corazón del líder", "Humildad y servicio"],
-                    disponible: false
+                    url: "clases/liderazgo-servicio/clase3.html",
+                    temas: ["El corazón del líder", "Humildad y servicio", "disfunciones"],
+                    disponible: true
                 },
                 {
                     numero: 4,
